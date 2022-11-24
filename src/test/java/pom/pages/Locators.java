@@ -23,6 +23,8 @@ public class Locators {
     public static class Buttons {
       public static By buttonDoubleClick = By.xpath("//*[@id='doubleClickBtn']");
       public static By paragraphDoubleClick = By.xpath("//p[@id='doubleClickMessage']");
+      public static By buttonRightClick = By.xpath("//button[@id='rightClickBtn']");
+      public static By paragraphRightClick = By.xpath("//p[@id='rightClickMessage']");
     }
   }
 

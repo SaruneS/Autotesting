@@ -31,4 +31,22 @@ public class ButtonsTest extends BaseTest {
       )
     );
   }
+
+  @Test
+  public void testButtonRightClick() {
+    String expectedResult = "right click";
+    String actualResult;
+
+    ButtonsPage.rightClickButton();
+    actualResult = ButtonsPage.readMessageOfRightClick();
+
+    Assert.assertTrue(
+      actualResult.contains(expectedResult),
+      String.format(
+        "Actual: %s; Expected %s",
+        actualResult,
+        expectedResult
+      )
+    );
+  }
 }

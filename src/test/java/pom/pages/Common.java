@@ -74,4 +74,8 @@ public class Common {
   public static void doubleClickElementByAction(By locator) {
     getElementForActions(locator).doubleClick().perform();
   }
+
+  public static void rightClickElementByAction(By locator) {
+    getElementForActions(locator).contextClick().perform();
+  }
 }
